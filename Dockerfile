@@ -33,4 +33,6 @@ ENV NODE_ENV=production
 EXPOSE 1337
 
 # Start Strapi server (admin + API)
-CMD ["npm", "start"]
+COPY entrypoint.sh /usr/src/app/entrypoint.sh
+RUN chmod +x /usr/src/app/entrypoint.sh
+CMD ["/usr/src/app/entrypoint.sh"]

@@ -7,7 +7,7 @@ services:
     ports:
       - "1337:1337"
     environment:
-      NODE_ENV: production
+      NODE_ENV: development
       APP_KEYS: QbkfDPH6FJ+K0DJMsuyiNA==,2RPe1TjuUxpwFUDniE1Qng==,ksw+Zq4RPo39G3VNQVAwMw==,5gmVwaVmeoUqWTVRTkDwwQ==
       API_TOKEN_SALT: yAzNQj4aGpsMJ77gaGTnEQ==
       ADMIN_JWT_SECRET: p1h+z0U1uLmppVaEtlfSgQ==
