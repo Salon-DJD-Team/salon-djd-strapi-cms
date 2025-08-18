@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  strapi:
+    build: .
+    container_name: strapi
+    ports:
+      - "1337:1337"
+    environment:
+      NODE_ENV: production
+      APP_KEYS: QbkfDPH6FJ+K0DJMsuyiNA==,2RPe1TjuUxpwFUDniE1Qng==,ksw+Zq4RPo39G3VNQVAwMw==,5gmVwaVmeoUqWTVRTkDwwQ==
+      API_TOKEN_SALT: yAzNQj4aGpsMJ77gaGTnEQ==
+      ADMIN_JWT_SECRET: p1h+z0U1uLmppVaEtlfSgQ==
+      JWT_SECRET: XgXhsKZBVfvj6S8c5ELtFA==
+      DATABASE_CLIENT: mysql
+      DATABASE_HOST: host.docker.internal
+      DATABASE_PORT: 3306
+      DATABASE_NAME: strapi
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: root
+
+volumes:
+  strapi-data:
