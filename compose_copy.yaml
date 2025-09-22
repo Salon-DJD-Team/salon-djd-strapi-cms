@@ -15,9 +15,9 @@ services:
       DATABASE_CLIENT: mysql
       DATABASE_HOST: 162.210.70.175
       DATABASE_PORT: 3306
-      DATABASE_NAME: hcpgrd1i_strapi_cms
-      DATABASE_USERNAME: hcpgrd1i_strapi_user
-      DATABASE_PASSWORD: hcpgrd1i_Orange221
+      DATABASE_NAME: ___
+      DATABASE_USERNAME: ___
+      DATABASE_PASSWORD: __
 
 volumes:
   strapi-data:
