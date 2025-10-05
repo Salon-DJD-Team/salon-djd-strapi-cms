@@ -4,7 +4,7 @@
   "info": {
     "singularName": "social-network",
     "pluralName": "social-networks",
-    "displayName": "Social-network"
+    "displayName": "SocialNetwork"
   },
   "options": {
     "draftAndPublish": true
