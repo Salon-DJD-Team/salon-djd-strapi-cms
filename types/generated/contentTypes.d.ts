@@ -441,7 +441,7 @@ export interface ApiEspacePavilionEspacePavilion
   extends Struct.SingleTypeSchema {
   collectionName: 'espace_pavilions';
   info: {
-    displayName: 'Espace pavilion';
+    displayName: 'EspacePavilion';
     pluralName: 'espace-pavilions';
     singularName: 'espace-pavilion';
   };
@@ -683,7 +683,7 @@ export interface ApiSocialNetworkSocialNetwork
   extends Struct.CollectionTypeSchema {
   collectionName: 'social_networks';
   info: {
-    displayName: 'Social-network';
+    displayName: 'SocialNetwork';
     pluralName: 'social-networks';
     singularName: 'social-network';
   };
