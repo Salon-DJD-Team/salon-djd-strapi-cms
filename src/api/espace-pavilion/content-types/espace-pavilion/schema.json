@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "espace_pavilions",
+  "info": {
+    "singularName": "espace-pavilion",
+    "pluralName": "espace-pavilions",
+    "displayName": "Espace pavilion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "description.description-with-icon",
+      "repeatable": true
+    }
+  }
+}
