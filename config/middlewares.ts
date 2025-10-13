@@ -1,12 +1,22 @@
 export default [
-  'strapi::logger',
-  'strapi::errors',
-  'strapi::security',
-  'strapi::cors',
-  'strapi::poweredBy',
-  'strapi::query',
-  'strapi::body',
-  'strapi::session',
-  'strapi::favicon',
-  'strapi::public',
+  "strapi::logger",
+  "strapi::errors",
+  {
+    name: "strapi::security",
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          "frame-ancestors": ["'self'", "https://salondjd.sn", "https://salondjd.sn", "http://localhost:4200"],
+        },
+      },
+    },
+  },
+  "strapi::cors",
+  "strapi::poweredBy",
+  "strapi::query",
+  "strapi::body",
+  "strapi::session",
+  "strapi::favicon",
+  "strapi::public",
 ];
