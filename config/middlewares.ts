@@ -7,7 +7,7 @@ export default [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "frame-ancestors": ["'self'", "https://salondjd.sn", "https://salondjd.sn", "http://localhost:4200"],
+          "frame-ancestors": ["'self'", "https://www.salondjd.sn", "https://salondjd.sn", "http://localhost:4200"],
         },
       },
     },
