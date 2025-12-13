@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "faq_events",
+  "info": {
+    "singularName": "faq-event",
+    "pluralName": "faq-events",
+    "displayName": "Faq-event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "subtitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "list": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq"
+    }
+  }
+}

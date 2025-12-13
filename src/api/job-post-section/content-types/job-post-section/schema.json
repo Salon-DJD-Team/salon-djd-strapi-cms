@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "job_post_sections",
+  "info": {
+    "singularName": "job-post-section",
+    "pluralName": "job-post-sections",
+    "displayName": "Job Post Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "job_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-post.job-post"
+    }
+  }
+}

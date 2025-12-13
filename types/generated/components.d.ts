@@ -38,12 +38,24 @@ export interface MagazineMagazine extends Struct.ComponentSchema {
   };
 }
 
+export interface SocialsSocialNetwork extends Struct.ComponentSchema {
+  collectionName: 'components_socials_social_networks';
+  info: {
+    displayName: 'socialNetwork';
+  };
+  attributes: {
+    icon: Schema.Attribute.String;
+    url: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'description.description-with-icon': DescriptionDescriptionWithIcon;
       'description.description-with-image': DescriptionDescriptionWithImage;
       'magazine.magazine': MagazineMagazine;
+      'socials.social-network': SocialsSocialNetwork;
     }
   }
 }
