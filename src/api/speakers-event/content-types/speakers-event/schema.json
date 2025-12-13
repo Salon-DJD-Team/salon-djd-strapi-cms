@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "speakers_events",
+  "info": {
+    "singularName": "speakers-event",
+    "pluralName": "speakers-events",
+    "displayName": "Speakers-event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "list": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::speaker.speaker"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}
